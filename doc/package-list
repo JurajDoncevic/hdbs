@@ -1,0 +1,10 @@
+com.juraj.hdbs
+com.juraj.hdbs.Utils
+com.juraj.hdbs.connection.credentials
+com.juraj.hdbs.connection.factory
+com.juraj.hdbs.connection.pool
+com.juraj.hdbs.metadataDb
+com.juraj.hdbs.metadataDb.DAO
+com.juraj.hdbs.metadataDb.Models
+com.juraj.hdbs.schemaManagement
+com.juraj.hdbs.schemaManagement.metamodeling
