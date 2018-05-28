@@ -23,13 +23,14 @@ public class SchemaLoader {
     /** Static method that is used to load a relevant global schema from connected databases
      * @param connectionPool Connection pool containing all relevant database connections
      * @param metadataDb Metadata database object holding a connection to a database describing global metadata and settings
+     * @throws Exception Thrown on connection pool failure
      * @return GlobalSchema object that holds the current status of the global schema
      */
-    public static GlobalSchema loadGlobalSchemaOnConnectionPool(ConnectionPool connectionPool, MetadataDb metadataDb){
+    public static GlobalSchema loadGlobalSchemaOnConnectionPool(ConnectionPool connectionPool, MetadataDb metadataDb) throws Exception {
         List<Database> databases = new ArrayList<>();
         List<com.juraj.hdbs.schemaManagement.metamodeling.Table> tables = new ArrayList<>();
         List<com.juraj.hdbs.schemaManagement.metamodeling.Column> columns = new ArrayList<>();
-        List<com.juraj.hdbs.schemaManagement.metamodeling.Relationship> relationships = new ArrayList<>();
+        List<LocalRelationship> localRelationships = new ArrayList<>();
 
         for(String dbName : connectionPool.getConnectedDbNames()){
 
@@ -54,26 +55,26 @@ public class SchemaLoader {
             for(Relationship rel : ctx.getDataContext().getSchemaByName(ctx.getDefaultSchemaName()).getRelationships()){
                 Column pk_column = rel.getPrimaryColumns()[0];
                 Column fk_column = rel.getForeignColumns()[0];
-                relationships.add(
-                        new com.juraj.hdbs.schemaManagement.metamodeling.Relationship(pk_column.getName(),
-                                rel.getPrimaryTable().getName(),fk_column.getName(), rel.getForeignTable().getName())
+                localRelationships.add(
+                        new LocalRelationship(dbName+"."+pk_column.getTable().getName()+"."+pk_column.getName(),
+                                dbName+"."+fk_column.getTable().getName()+"."+ fk_column.getName())
                 );
             }
 
             if (ctx.getClass().equals(ConnectionContextPostgres.class)){
-                databases.add(new PostgresDatabase(dbName, tables, relationships));
+                databases.add(new PostgresDatabase(dbName, tables, localRelationships));
             }
             if(ctx.getClass().equals(ConnectionContextMysql.class)){
-                databases.add(new MysqlDatabase(dbName, tables, relationships));
+                databases.add(new MysqlDatabase(dbName, tables, localRelationships));
             }
 
 
             tables = new ArrayList<>();
-            relationships = new ArrayList<>();
+            localRelationships = new ArrayList<>();
         }
 
-        //get global relationships
-        List<GlobalRelationship> globalRelationships = metadataDb.getGlobalRelationshipDAO().getAll();
+        //get global localRelationships
+        List<GlobalRelationship> globalRelationships = metadataDb.getGlobalRelationshipService().getAll();
 
         GlobalSchema globalSchema = new GlobalSchema(databases, globalRelationships);
 

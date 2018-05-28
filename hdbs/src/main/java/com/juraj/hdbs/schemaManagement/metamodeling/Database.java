@@ -1,6 +1,6 @@
 package com.juraj.hdbs.schemaManagement.metamodeling;
 
-import com.juraj.hdbs.Utils.DBVendor;
+import com.juraj.hdbs.utils.DBVendor;
 
 import java.util.List;
 
@@ -11,17 +11,17 @@ public abstract class Database {
 
     private String name;
     private List<Table> tables;
-    private List<Relationship> relationships;
+    private List<LocalRelationship> localRelationships;
 
     /** Constructor
      * @param name Name of the database
      * @param tables List of tables in the database
-     * @param relationships List of relationships among the tables in the database
+     * @param localRelationships List of localRelationships among the tables in the database
      */
-    public Database(String name, List<Table> tables, List<Relationship> relationships) {
+    public Database(String name, List<Table> tables, List<LocalRelationship> localRelationships) {
         this.name = name;
         this.tables = tables;
-        this.relationships = relationships;
+        this.localRelationships = localRelationships;
     }
 
     /** Gets the database name
@@ -38,11 +38,11 @@ public abstract class Database {
         return tables;
     }
 
-    /** Gets all the relationships in the database
-     * @return List of Relationship
+    /** Gets all the localRelationships in the database
+     * @return List of LocalRelationship
      */
-    public List<Relationship> getRelationships() {
-        return relationships;
+    public List<LocalRelationship> getLocalRelationships() {
+        return localRelationships;
     }
 
     /** Gets a table with specified name

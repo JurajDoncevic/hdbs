@@ -1,54 +1,87 @@
 package com.juraj.hdbs.schemaManagement.metamodeling;
 
-/** Represents a PK-FK relationship
- * @author Juraj
+/**
+ * Created by Juraj on 22.3.2018..
  */
-public class Relationship {
+public abstract class Relationship {
+    protected String primaryKeyId;
+    protected String foreignKeyId;
 
-    private String primaryKeyTableName;
-    private String primaryKeyColumnName;
-    private String foreignKeyTableName;
-    private String foreignKeyColumnName;
-
-    /** Constructor
-     * @param primaryKeyTableName Name of the table where the primary key column is
-     * @param primaryKeyColumnName  Name of the primary key column
-     * @param foreignKeyTableName Name of the table where the foreign key column is
-     * @param foreignKeyColumnName Name of the foreign key column
-     */
-    public Relationship(String primaryKeyTableName, String primaryKeyColumnName, String foreignKeyTableName, String foreignKeyColumnName) {
-        this.primaryKeyTableName = primaryKeyTableName;
-        this.primaryKeyColumnName = primaryKeyColumnName;
-        this.foreignKeyTableName = foreignKeyTableName;
-        this.foreignKeyColumnName = foreignKeyColumnName;
+    public Relationship(String primaryKeyId, String foreignKeyId) throws Exception {
+        if (!primaryKeyId.matches("\\w+\\.\\w+\\.\\w+") || !foreignKeyId.matches("\\w+\\.\\w+\\.\\w+")){
+            throw new Exception("Global relationship IDs are not valid");
+        }
+        this.primaryKeyId = primaryKeyId;
+        this.foreignKeyId = foreignKeyId;
     }
 
-    /** Gets the name of a table that has the primary key
+    /** Gets the primary key column id
+     * @return String of the id
+     */
+    public String getPrimaryKeyId() {
+        return primaryKeyId;
+    }
+
+    /** Gets the foreign key column id
+     * @return String of the id
+     */
+    public String getForeignKeyId() {
+        return foreignKeyId;
+    }
+
+    /** Gets the primary key's database name
+     * @return String of the database name
+     */
+    public String getPrimaryKeyDB(){
+        return primaryKeyId.split( "\\.")[0];
+    }
+
+    /** Gets the primary key's table name
      * @return String of the table name
      */
-    public String getPrimaryKeyTableName() {
-        return primaryKeyTableName;
+    public String getPrimaryKeyTable(){
+        return primaryKeyId.split( "\\.")[1];
     }
 
-    /** Gets the primary key column name
+    /** Gets the primary key's column name
      * @return String of the column name
      */
-    public String getPrimaryKeyColumnName() {
-        return primaryKeyColumnName;
+    public String getPrimaryKeyColumn(){
+        return primaryKeyId.split( "\\.")[2];
     }
 
-    /** Gets the name of a table that has the foreign key
+    /** Gets the foreign key's database name
+     * @return String of the database name
+     */
+    public String getForeignKeyDB(){
+        return foreignKeyId.split( "\\.")[0];
+    }
+
+    /** Gets the foreign key's table name
      * @return String of the table name
      */
-    public String getForeignKeyTableName() {
-        return foreignKeyTableName;
+    public String getForeignKeyTable(){
+        return foreignKeyId.split( "\\.")[1];
     }
 
-    /** Gets the foreign key column name
+    /** Gets the foreign key's column name
      * @return String of the column name
      */
-    public String getForeignKeyColumnName() {
-        return foreignKeyColumnName;
+    public String getForeignKeyColumn(){
+        return foreignKeyId.split( "\\.")[2];
     }
 
+    /** Gets the local id of a primary key column: tableId.columnId
+     * @return String of local Id
+     */
+    public String getPrimaryKeyLocalId(){
+        return primaryKeyId.split( "\\.")[1] + "." + primaryKeyId.split( "\\.")[2];
+    }
+
+    /** Gets the local id of a foreign key column: tableId.columnId
+     * @return String of local Id
+     */
+    public String getForeignKeyLocalId(){
+        return foreignKeyId.split( "\\.")[1] + "." + primaryKeyId.split( "\\.")[2];
+    }
 }

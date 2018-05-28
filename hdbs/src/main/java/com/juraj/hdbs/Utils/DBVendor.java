@@ -1,4 +1,4 @@
-package com.juraj.hdbs.Utils;
+package com.juraj.hdbs.utils;
 
 /** Enum to describe possible database vendors supported by the HDBS
  * @author Juraj

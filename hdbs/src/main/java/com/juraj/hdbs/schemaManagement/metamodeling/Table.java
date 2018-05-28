@@ -74,4 +74,17 @@ public class Table {
 
         return null;
     }
+
+    /** Determines if there is a column with given name in the table
+     * @param columnName Name of column
+     * @return If it exist - true; else false
+     */
+    public boolean hasColumnWithName(String columnName){
+        for (Column col : columns){
+            if (col.getName().equals(columnName))
+                return true;
+        }
+
+        return false;
+    }
 }

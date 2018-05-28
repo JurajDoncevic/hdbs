@@ -28,7 +28,7 @@ public class ConnectionFactory {
         properties.put("url", url);
         properties.put("username", username);
         properties.put("password", password);
-        properties.put("driver-class", "org.postgres.Driver");
+        properties.put("driver-class", "org.postgresql.Driver");
 
 
 

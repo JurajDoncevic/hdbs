@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="antlr-runtime-4.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/antlr-runtime-4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commons-jexl3-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/hdbs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jackson-annotations-2.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jdom-2.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jgrapht-core-1.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MetaModel-core-4.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mysql-connector-java-8.0.9-rc-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/postgresql-42.1.4.jre6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sqlite-jdbc-3.21.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -4,6 +4,11 @@ import com.juraj.hdbs.connection.credentials.DBCredentials;
 import com.juraj.hdbs.connection.credentials.DBCredentialsMysql;
 import org.apache.metamodel.jdbc.JdbcDataContext;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 /** Connection context for a MySQL database
  * @author Juraj
  */
@@ -53,6 +58,35 @@ public class ConnectionContextMysql implements ConnectionContext {
     @Override
     public void closeConnection() {
         dataContext.close(dataContext.getConnection());
+    }
+
+    /** Runs query that returns a ResultSet result
+     * @param queryText String of the query text
+     * @return ResultSet with query results
+     * @throws SQLException In case of a exception thrown by the connection driver
+     */
+    @Override
+    public ResultSet runQueryWithResult(String queryText) throws SQLException {
+        Connection connection = dataContext.getConnection();
+
+        Statement statement = connection.createStatement();
+        statement.execute(queryText);
+
+        ResultSet resultSet = statement.getResultSet();
+
+        return resultSet;
+    }
+
+    /** Runs a query that returns no results (UPDATE, DELETE, INSERT)
+     * @param queryText String of query text
+     * @throws SQLException In case of a exception thrown by the connection driver
+     */
+    @Override
+    public void runQueryWithoutResult(String queryText) throws SQLException {
+        Connection connection = dataContext.getConnection();
+        Statement statement = connection.createStatement();
+        statement.execute(queryText);
+
     }
 
 }

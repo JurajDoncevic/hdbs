@@ -1,5 +1,6 @@
 package com.juraj.hdbs.schemaManagement.metamodeling;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /** Represents a global schema of the HDBS
@@ -47,6 +48,91 @@ public class GlobalSchema {
         return globalRelationships;
     }
 
+    public boolean doesDatabaseExist(String dbName){
+        if(getDatabaseByName(dbName) != null){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean doesTableExist(String tableId){
+        if(tableId.matches("\\w+\\.\\w+")){
+            String[] splits = tableId.split("\\.");
+            if(getDatabaseByName(splits[0]) != null){
+                if(getDatabaseByName(splits[0]).getTableByName(splits[1]) != null){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean doesColumnExist(String columnId){
+        if(columnId.matches("\\w+\\.\\w+\\.\\w+")){
+            String[] splits = columnId.split("\\.");
+            if(getDatabaseByName(splits[0]) != null){
+                if(getDatabaseByName(splits[0]).getTableByName(splits[1]) != null){
+                    if(getDatabaseByName(splits[0]).getTableByName(splits[1]).getColumnByName(splits[2]) != null){
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    public Table getTableById(String tableId){
+        if(tableId.matches("\\w+\\.\\w+")){
+            String[] splits = tableId.split("\\.");
+            if(getDatabaseByName(splits[0]) != null){
+                if(getDatabaseByName(splits[0]).getTableByName(splits[1]) != null){
+                    return getDatabaseByName(splits[0]).getTableByName(splits[1]);
+                }
+            }
+        }
+        return null;
+    }
+
+    public Column getColumnById(String columnId){
+        if(columnId.matches("\\w+\\.\\w+\\.\\w+")){
+            String[] splits = columnId.split("\\.");
+            if(getDatabaseByName(splits[0]) != null){
+                if(getDatabaseByName(splits[0]).getTableByName(splits[1]) != null){
+                    if(getDatabaseByName(splits[0]).getTableByName(splits[1]).getColumnByName(splits[2]) != null){
+                        return getDatabaseByName(splits[0]).getTableByName(splits[1]).getColumnByName(splits[2]);
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public boolean doesGlobalRelationshipExist(String primaryKeyId, String foreignKeyId){
+        List<Relationship> relationships = new ArrayList<>();
+        relationships.addAll(globalRelationships);
+
+        if (relationships.stream().filter(r -> r.primaryKeyId.equals(primaryKeyId) && r.foreignKeyId.equals(foreignKeyId)).count() != 0){
+            return true;
+        }
+
+
+        return false;
+    }
+
+    public boolean doesRelationshipExist(String primaryKeyId, String foreignKeyId){
+        List<Relationship> relationships = new ArrayList<>();
+        relationships.addAll(globalRelationships);
+        for (Database db : databases){
+            relationships.addAll(db.getLocalRelationships());
+        }
+
+        if (relationships.stream().filter(r -> r.primaryKeyId.equals(primaryKeyId) && r.foreignKeyId.equals(foreignKeyId)).count() != 0){
+            return true;
+        }
+
+
+        return false;
+    }
 
 
 }

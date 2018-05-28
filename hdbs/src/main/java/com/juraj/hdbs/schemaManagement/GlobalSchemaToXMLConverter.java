@@ -1,13 +1,10 @@
 package com.juraj.hdbs.schemaManagement;
 
-import com.juraj.hdbs.Utils.DBVendor;
 import com.juraj.hdbs.schemaManagement.metamodeling.*;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
-
-import java.io.IOException;
 
 /** Used to convert global schema to XML in order to be passed to other service or applications
  * @author Juraj
@@ -55,10 +52,10 @@ public class GlobalSchemaToXMLConverter {
             databaseElement.addContent(tablesElement);
 
             Element relationshipsElement = new Element("relationships");
-            for(Relationship rel : db.getRelationships()){
+            for(LocalRelationship rel : db.getLocalRelationships()){
                 Element relationshipElement = new Element("relationship");
-                relationshipElement.setAttribute("pkColumnId", db.getName()+"."+rel.getPrimaryKeyTableName()+"."+ rel.getPrimaryKeyColumnName());
-                relationshipElement.setAttribute("fkColumnId", db.getName()+"."+rel.getForeignKeyTableName()+"."+ rel.getForeignKeyColumnName());
+                relationshipElement.setAttribute("pkColumnId", rel.getPrimaryKeyId());
+                relationshipElement.setAttribute("fkColumnId", rel.getForeignKeyId());
 
                 relationshipsElement.addContent(relationshipElement);
             }

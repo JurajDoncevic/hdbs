@@ -1,7 +1,14 @@
 package com.juraj.hdbs;
 
 
-import com.juraj.hdbs.Utils.DBVendor;
+import com.google.common.io.Resources;
+import com.juraj.hdbs.utils.DBVendor;
+import com.juraj.hdbs.utils.results.ActionResult;
+import org.apache.commons.jexl3.*;
+
+import java.nio.charset.Charset;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Main {
@@ -10,30 +17,52 @@ public class Main {
 
 
         try {
-            HeterogeneousDatabaseSystem hdbs = new HeterogeneousDatabaseSystem("<path_to_file>");
+            long time = System.nanoTime();
+            HeterogeneousDatabaseSystem hdbs = new HeterogeneousDatabaseSystem("D:/Diplomski/metadata.db");
+            time = System.nanoTime() - time;
+            System.out.println("HDBS init time: " + String.valueOf(time / 1000000) + "ms");
+            hdbs.getConnectedDbNames().forEach(System.out::println);
 
-            hdbs.addConnectionToPool("localhost:3306", "mysql1", "root", "admin", DBVendor.MYSQL);
-            hdbs.addConnectionToPool("localhost:3306", "mysql2", "root", "admin", DBVendor.MYSQL);
-            hdbs.addConnectionToPool("localhost:5432", "postgres1", "postgres", "admin", DBVendor.POSTGRESQL);
-            hdbs.addConnectionToPool("localhost:5432", "postgres2", "postgres", "admin", DBVendor.POSTGRESQL);
+            String queryText;
+            queryText = Resources.toString(Resources.getResource("query12.sql"), Charset.defaultCharset());
+            time = System.nanoTime();
+            ActionResult actionResult = hdbs.executeGlobalQuery(queryText);
+            time = System.nanoTime() - time;
+            System.out.println("Query exec time: " + String.valueOf(time / 1000000) + "ms");
+            System.out.println(actionResult.toString());
+            System.out.println(actionResult.getData());
 
-            System.out.println("Connected DBs:");
-            hdbs.getConnectedDbNames().forEach(db -> System.out.println(db));
 
-            hdbs.addGlobalRelationship("mysql1.customer.id", "mysql2.loyalty_card.person_id");
-            hdbs.addGlobalRelationship("postgres2.place.id", "mysql1.customer.place_id");
-            hdbs.addGlobalRelationship("mysql1.customer.place_id", "postgres2.place.name");//this should fail
-            System.out.println(hdbs.getGlobalSchemaXML());
-
-            hdbs.removeGlobalRelationship("mysql1.customer.id", "mysql2.loyalty_card.person_id");
-            hdbs.removeGlobalRelationship("postgres2.place.id", "mysql1.customer.place_id");
-
-            System.out.println(hdbs.getGlobalSchemaXML());
         } catch (Exception e) {
             e.printStackTrace();
         }
 
 
+    }
+
+    public static void jexlTest(){
+        Map<String, Boolean> map = new HashMap<>();
+
+        map.put("1", true);
+        map.put("2", false);
+        map.put("3", false);
+
+        JexlEngine jexlEngine = new JexlBuilder().create();
+
+        String expression = "map.get(\"1\") && map.get(\"2\") || map.get(\"3\")";
+        JexlExpression e = jexlEngine.createExpression(expression);
+
+        // Create a context and add data
+        JexlContext jc = new MapContext();
+        jc.set("map", map);
+
+
+        // Now evaluate the expression, getting the result
+        Object o = e.evaluate(jc);
+
+        System.out.println(o.toString());
+
+        System.exit(0);
     }
 
 

@@ -6,6 +6,11 @@
     <option name="SCOPE_TYPE" value="8" />
     <option name="CUSTOM_SCOPE_NAME" value="Module 'hdbs'" />
   </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="hdbs" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6a859e7f-ec31-4495-a508-ffd727ba0eb7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,12 +27,12 @@
     <favorites_list name="hdbs" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+            <state relative-caret-position="150">
+              <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -58,57 +63,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/ForeignKeyColumn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/MetaModelExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/MetaModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/CurrentMetaModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/CurrentGlobalSchema.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/xmlSchemaTranslation/SchemaToXMLConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/xmlSchemaTranslation/GlobalSchemaToXMLConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/pool/ConnectionContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/pool/ConnectionContextMysql.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/pool/ConnectionContextPostgres.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/GlobalSchemaExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/Utils/DBVendor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/pool/ConnectionPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/GlobalConstraint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/GlobalForeignKeyConstraint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/GlobalRelationshipFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/services/GlobalRelationshipService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/services/MetadataDb.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/models/GlobalRelationshipModel.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/Utils/TypeCompatibilityChecker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/Table.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/Relationship.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/PostgresDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/MysqlDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/GlobalSchema.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/GlobalRelationship.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/SchemaExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/GlobalSchemaToXMLConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/MysqlTypesDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/PostgresTypesDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/PostgresReverseTypeCompatibilityDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/MysqlReverseTypeCompatibilityDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/MetadataDb.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/Utils/DBVendor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/factory/ConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/pool/ConnectionContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/pool/ConnectionContextMysql.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/pool/ConnectionContextPostgres.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/pool/ConnectionPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/credentials/DBCredentials.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/credentials/DBCredentialsMysql.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/credentials/DBCredentialsPostgres.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/HeterogeneousDatabaseSystem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/Models/PostgresMysqlTypeCompatibilityModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/queryComponents/Join.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/queryComponents/LogicalOperator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/queryComponents/UpdateClause.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/queryComponents/WhereClause.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/results/ActionResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/results/ActionResultType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/customExceptions/ConnectionSetupException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/customExceptions/LocalQueryExecutionException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/customExceptions/PersistentConnectionRetrievalException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/customExceptions/QueryCreationException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/customExceptions/ResultGlobalizationException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/customExceptions/SemanticAnalysisException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/localization/LocalDeleteQuery.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/SchemaLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/Column.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/GlobalRelationshipDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/PostgresMysqlTypeCompatibilityDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/customExceptions/InvalidAggregateDataTypeException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalMinAggregateQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalAggregateQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalAvgAggregateQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/Services/PostgresTypesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/Services/MysqlTypesService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/query2.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query3.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query6.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query1.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query5.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query7.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query8.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query9.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query10.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query11.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query13.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query14.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/query15.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/GlobalSchemaToXMLConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/semantics/GlobalQuerySemanticChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/GlobalSQL.g4" />
+        <option value="$PROJECT_DIR$/src/main/resources/query16.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalCountAggregateQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalSumAggregateQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalMaxAggregateQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/query12.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/localization/QueryLocalizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/HeterogeneousDatabaseSystem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/localization/LocalSelectQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/optimization/LocalQueryOptimizer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/query4.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalization/ResultGlobalizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/dataSets/DataSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/GlobalQueryFactory.java" />
       </list>
     </option>
   </component>
@@ -127,10 +132,26 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1608" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="1176" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Ant inspections</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -191,6 +212,28 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -244,7 +287,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="metadataDb" />
+              <option name="myItemId" value="querying" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,11 +317,131 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="metadataDb" />
+              <option name="myItemId" value="querying" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DAO" />
+              <option name="myItemId" value="globalization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="querying" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataSets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="consistency" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="juraj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="querying" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="language" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,22 +452,35 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/globalSQL.g4::/auto-gen" value="true" />
+    <property name="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/globalSQL.g4::/output-dir" value="D:\Diplomski\hdbs\target\generated-sources\antlr4" />
+    <property name="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/globalSQL.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/globalSQL.g4::/gen-visitor" value="false" />
+    <property name="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/GlobalSQL.g4::/auto-gen" value="true" />
+    <property name="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/GlobalSQL.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/GlobalSQL.g4::/gen-visitor" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.juraj.hdbs.schemaManagement.metamodeling" />
       <recent name="com.juraj.hdbs.connectionManagement.pool" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Diplomski\hdbs\src\main\java\com\juraj\hdbs\querying\language" />
+      <recent name="D:\Diplomski\hdbs\src\main\java\com\juraj\hdbs\connectionManagement\factory" />
+      <recent name="D:\Diplomski\hdbs\src\main\java\com\juraj\hdbs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.juraj.hdbs.connectionManagement.factory" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Diplomski\hdbs\src\main\java\com\juraj\hdbs\connectionManagement\factory" />
-      <recent name="D:\Diplomski\hdbs\src\main\java\com\juraj\hdbs" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.juraj.hdbs.utils.customExceptions" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -460,41 +636,45 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1608" y="-8" width="1616" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23173077" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22980769" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884616" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39802632" sideWeight="0.5043924" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5596154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3338816" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.269375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1954612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6118421" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6694079" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67105263" sideWeight="0.4956076" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884616" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="94" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -503,338 +683,387 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/customExceptions/ConnectionSetupException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="105">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/IntelliJ/sqlclient/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/customExceptions/SemanticAnalysisException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/metamodel/MetaModel-jdbc/4.6.0/MetaModel-jdbc-4.6.0.jar!/org/apache/metamodel/jdbc/JdbcMetadataLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/ConnectionManagerPostgres.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/pool/ConnectionContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/ConnectionManagerMysql.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/factory/ConnectionManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/factory/ConnectionManagerMysql.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/factory/ConnectionManagerPostgres.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/metamodel/MetaModel-jdbc/4.6.0/MetaModel-jdbc-4.6.0.jar!/org/apache/metamodel/jdbc/JdbcDataContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="183" column="51" lean-forward="true" selection-start-line="183" selection-start-column="51" selection-end-line="183" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/customDataContexts/CustomDataContext.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/PrimaryKeyColumn.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/ForeignKeyColumn.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/CurrentMetaModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/MetaModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/CurrentGlobalSchema.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connectionManagement/ConnectionManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/GlobalRelationshipModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/models/GlobalRelationshipModel.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/GlobalRelationshipFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/Relationship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <element signature="method#Table#0;class#Table#0" expanded="false" />
-            <element signature="method#getPrimaryKey#0;class#Table#0" expanded="false" />
-            <element signature="method#getForeignKeys#0;class#Table#0" expanded="false" />
-            <element signature="method#getColumnByName#0;class#Table#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/MysqlDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/PostgresDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/GlobalRelationship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/GlobalSchema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/GlobalSchemaToXMLConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" column="72" lean-forward="false" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
-          <folding>
-            <element signature="method#convert#0;class#GlobalSchemaToXMLConverter#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/Utils/TypeCompatibilityChecker.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/PostgresTypesDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/localization/LocalDeleteQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="53" column="56" lean-forward="false" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding>
-            <element signature="method#getAllTypes#0;class#PostgresTypesDAO#0" expanded="false" />
-            <element signature="method#getType#0;class#PostgresTypesDAO#0" expanded="false" />
-            <element signature="method#insertType#0;class#PostgresTypesDAO#0" expanded="false" />
-            <element signature="method#deleteType#0;class#PostgresTypesDAO#0" expanded="false" />
-          </folding>
+          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/MysqlTypesDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="53" column="56" lean-forward="false" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding>
-            <element signature="method#getAllTypes#0;class#MysqlTypesDAO#0" expanded="false" />
-            <element signature="method#getType#0;class#MysqlTypesDAO#0" expanded="false" />
-            <element signature="method#insertType#0;class#MysqlTypesDAO#0" expanded="false" />
-            <element signature="method#deleteType#0;class#MysqlTypesDAO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/PostgresReverseTypeCompatibilityDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="120" selection-end-column="7" />
-          <folding>
-            <element signature="method#getAllCompatibilities#0;class#PostgresReverseTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#getCompatibleTypesForType#0;class#PostgresReverseTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#insertCompatibility#0;class#PostgresReverseTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#deleteCompatibility#0;class#PostgresReverseTypeCompatibilityDAO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/MetadataDb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-          <folding>
-            <element signature="method#MetadataDb#0;class#MetadataDb#0" expanded="false" />
-            <element signature="method#isConnectionOK#0;class#MetadataDb#0" expanded="false" />
-            <element signature="method#getPostgresMysqlTypeCompatibilityDAO#0;class#MetadataDb#0" expanded="false" />
-            <element signature="method#getMysqlReverseTypeCompatibilityDAO#0;class#MetadataDb#0" expanded="false" />
-            <element signature="method#getPostgresReverseTypeCompatibilityDAO#0;class#MetadataDb#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/Utils/DBVendor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/factory/ConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="47" column="51" lean-forward="true" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/pool/ConnectionContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/pool/ConnectionContextPostgres.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/pool/ConnectionContextMysql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/credentials/DBCredentialsMysql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="69" column="7" lean-forward="false" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/credentials/DBCredentialsPostgres.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="70" column="7" lean-forward="false" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/credentials/DBCredentials.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/connection/pool/ConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="108" column="39" lean-forward="false" selection-start-line="108" selection-start-column="39" selection-end-line="108" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/HeterogeneousDatabaseSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="88" column="7" lean-forward="false" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
-          <folding>
-            <element signature="method#HeterogeneousDatabaseSystem#0;class#HeterogeneousDatabaseSystem#0" expanded="false" />
-            <element signature="method#addConnectionToPool#0;class#HeterogeneousDatabaseSystem#0" expanded="false" />
-            <element signature="method#removeConnectionFromPool#0;class#HeterogeneousDatabaseSystem#0" expanded="false" />
-            <element signature="method#addGlobalRelationship#0;class#HeterogeneousDatabaseSystem#0" expanded="false" />
-            <element signature="method#removeGlobalRelationship#0;class#HeterogeneousDatabaseSystem#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/Models/PostgresMysqlTypeCompatibilityModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/utils/customExceptions/InvalidAggregateDataTypeException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="83" lean-forward="false" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
-          <folding>
-            <element signature="method#PostgresMysqlTypeCompatibilityModel#0;class#PostgresMysqlTypeCompatibilityModel#0" expanded="false" />
-          </folding>
+          <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalMinAggregateQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/SchemaLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="24" column="115" lean-forward="false" selection-start-line="24" selection-start-column="115" selection-end-line="24" selection-end-column="115" />
-          <folding>
-            <element signature="method#loadGlobalSchemaOnConnectionPool#0;class#SchemaLoader#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/GlobalRelationshipDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalAvgAggregateQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/Services/PostgresTypesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="85" column="7" lean-forward="true" selection-start-line="85" selection-start-column="7" selection-end-line="85" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/Services/MysqlTypesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="87" column="7" lean-forward="true" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query6.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/Relationship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query7.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query8.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query9.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query10.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query11.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query14.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query13.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query15.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query5.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/GlobalSchemaToXMLConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="43" column="28" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/GlobalSQL.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/queryComponents/UpdateClause.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="116" column="77" lean-forward="false" selection-start-line="116" selection-start-column="77" selection-end-line="116" selection-end-column="77" />
-          <folding>
-            <element signature="method#getAll#0;class#GlobalRelationshipDAO#0" expanded="false" />
-            <element signature="method#getByPrimaryKeyId#0;class#GlobalRelationshipDAO#0" expanded="false" />
-            <element signature="method#getByForeignKeyId#0;class#GlobalRelationshipDAO#0" expanded="false" />
-            <element signature="method#getByPrimaryAndForeignKeyId#0;class#GlobalRelationshipDAO#0" expanded="false" />
-            <element signature="method#insert#0;class#GlobalRelationshipDAO#0" expanded="false" />
-            <element signature="method#delete#0;class#GlobalRelationshipDAO#0" expanded="false" />
-            <element signature="method#deleteRelationshipsForDB#0;class#GlobalRelationshipDAO#0" expanded="false" />
-          </folding>
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/schemaManagement/metamodeling/Column.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/queryComponents/Join.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="42" column="78" lean-forward="false" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+        <state relative-caret-position="79">
+          <caret line="93" column="40" lean-forward="false" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalMaxAggregateQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="38" column="51" lean-forward="true" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalSumAggregateQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="59" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalCountAggregateQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalAggregateQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/execution/LocalQueryRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/graphing/JoinGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/language/semantics/GlobalQuerySemanticChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1149">
+          <caret line="215" column="46" lean-forward="true" selection-start-line="215" selection-start-column="46" selection-end-line="215" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/dataSets/ResultDataSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="81" column="34" lean-forward="false" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/MysqlReverseTypeCompatibilityDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalQueries/GlobalQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="120" column="7" lean-forward="false" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
+        <state relative-caret-position="334">
+          <caret line="62" column="39" lean-forward="true" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/localization/LocalUpdateQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="97" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query16.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query12.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/localization/QueryLocalizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="50" column="47" lean-forward="true" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/localization/LocalQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/localization/LocalSelectQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/optimization/LocalQueryOptimizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="44" column="38" lean-forward="true" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
           <folding>
-            <element signature="method#getAllCompatibilities#0;class#MysqlReverseTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#getCompatibleTypesForType#0;class#MysqlReverseTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#insertCompatibility#0;class#MysqlReverseTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#deleteCompatibility#0;class#MysqlReverseTypeCompatibilityDAO#0" expanded="false" />
+            <element signature="method#optimizeLocalQueriesByLocalJoins#0;class#LocalQueryOptimizer#0" expanded="false" />
+            <element signature="method#optimizeLocalQueriesBySelectColumns#0;class#LocalQueryOptimizer#0" expanded="false" />
+            <element signature="method#optimizeLocalQueriesByJoinColumns#0;class#LocalQueryOptimizer#0" expanded="false" />
+            <element signature="method#optimizeLocalQueryByWhereColumns#0;class#LocalQueryOptimizer#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/metadataDb/DAO/PostgresMysqlTypeCompatibilityDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/query4.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="61" lean-forward="false" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/globalization/ResultGlobalizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
-            <element signature="method#getAllCompatibilites#0;class#PostgresMysqlTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#getAllMysqlForPostgresTypeCompatibilities#0;class#PostgresMysqlTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#getAllPostgresForMysqlTypeCompatibilities#0;class#PostgresMysqlTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#getCompatibility#0;class#PostgresMysqlTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#getAllTypesCompatibleWithType#0;class#PostgresMysqlTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#insertCompatibility#0;class#PostgresMysqlTypeCompatibilityDAO#0" expanded="false" />
-            <element signature="method#deleteCompatibility#0;class#PostgresMysqlTypeCompatibilityDAO#0" expanded="false" />
+            <element signature="method#joinByGlobal#0;class#ResultGlobalizer#0" expanded="false" />
+            <element signature="method#createBoolExpressionText#0;class#ResultGlobalizer#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/HeterogeneousDatabaseSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="785">
+          <caret line="261" column="28" lean-forward="true" selection-start-line="261" selection-start-column="28" selection-end-line="261" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/dataSets/DataSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding>
+            <element signature="e#2920#2921#0" expanded="true" />
+            <element signature="e#2975#2976#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/querying/GlobalQueryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="69" column="40" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/juraj/hdbs/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        <state relative-caret-position="150">
+          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -844,11 +1073,18 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="library" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>hdbs</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -904,6 +1140,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.datastax.cassandra:cassandra-driver-core:3.0.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

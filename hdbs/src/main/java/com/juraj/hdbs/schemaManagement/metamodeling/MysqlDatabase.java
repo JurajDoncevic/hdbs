@@ -1,6 +1,6 @@
 package com.juraj.hdbs.schemaManagement.metamodeling;
 
-import com.juraj.hdbs.Utils.DBVendor;
+import com.juraj.hdbs.utils.DBVendor;
 
 import java.util.List;
 
@@ -14,10 +14,10 @@ public class MysqlDatabase extends Database {
     /** Constructor
      * @param name Name of the database
      * @param tables List of tables in the database
-     * @param relationships List of relationships among the tables in the database
+     * @param localRelationships List of localRelationships among the tables in the database
      */
-    public MysqlDatabase(String name, List<Table> tables, List<Relationship> relationships) {
-        super(name, tables, relationships);
+    public MysqlDatabase(String name, List<Table> tables, List<LocalRelationship> localRelationships) {
+        super(name, tables, localRelationships);
         dbVendor = DBVendor.MYSQL;
     }
 

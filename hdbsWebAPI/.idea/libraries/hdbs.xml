@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hdbs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/hdbs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

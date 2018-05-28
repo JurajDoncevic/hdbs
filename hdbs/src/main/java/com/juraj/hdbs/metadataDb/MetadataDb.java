@@ -1,6 +1,6 @@
 package com.juraj.hdbs.metadataDb;
 
-import com.juraj.hdbs.metadataDb.DAO.*;
+import com.juraj.hdbs.metadataDb.Services.*;
 
 import java.sql.*;
 
@@ -11,12 +11,13 @@ import java.sql.*;
 public class MetadataDb {
 
     private String connectionUrl;
-    private GlobalRelationshipDAO globalRelationshipDAO;
-    private MysqlTypesDAO mysqlTypesDAO;
-    private PostgresTypesDAO postgresTypesDAO;
-    private PostgresMysqlTypeCompatibilityDAO postgresMysqlTypeCompatibilityDAO;
-    private MysqlReverseTypeCompatibilityDAO mysqlReverseTypeCompatibilityDAO;
-    private PostgresReverseTypeCompatibilityDAO postgresReverseTypeCompatibilityDAO;
+    private GlobalRelationshipService globalRelationshipService;
+    private MysqlTypesService mysqlTypesService;
+    private PostgresTypesService postgresTypesService;
+    private PostgresMysqlTypeCompatibilityService postgresMysqlTypeCompatibilityService;
+    private MysqlReverseTypeCompatibilityService mysqlReverseTypeCompatibilityService;
+    private PostgresReverseTypeCompatibilityServie postgresReverseTypeCompatibilityServie;
+    private ConnectionService connectionService;
 
 
     /** Constructor
@@ -29,12 +30,13 @@ public class MetadataDb {
         if(!isConnectionOK(connectionUrl))
             throw new Exception("Connection with metadata DB could not be established!");
 
-        globalRelationshipDAO = new GlobalRelationshipDAO(connectionUrl);
-        mysqlTypesDAO = new MysqlTypesDAO(connectionUrl);
-        postgresTypesDAO = new PostgresTypesDAO(connectionUrl);
-        postgresMysqlTypeCompatibilityDAO = new PostgresMysqlTypeCompatibilityDAO(connectionUrl);
-        mysqlReverseTypeCompatibilityDAO = new MysqlReverseTypeCompatibilityDAO(connectionUrl);
-        postgresReverseTypeCompatibilityDAO = new PostgresReverseTypeCompatibilityDAO(connectionUrl);
+        globalRelationshipService = new GlobalRelationshipService(connectionUrl);
+        mysqlTypesService = new MysqlTypesService(connectionUrl);
+        postgresTypesService = new PostgresTypesService(connectionUrl);
+        postgresMysqlTypeCompatibilityService = new PostgresMysqlTypeCompatibilityService(connectionUrl);
+        mysqlReverseTypeCompatibilityService = new MysqlReverseTypeCompatibilityService(connectionUrl);
+        postgresReverseTypeCompatibilityServie = new PostgresReverseTypeCompatibilityServie(connectionUrl);
+        connectionService = new ConnectionService(connectionUrl);
 
     }
 
@@ -60,45 +62,49 @@ public class MetadataDb {
         return connectionUrl;
     }
 
-    /** Gets a GlobalRelationshipDAO for this metadata database
-     * @return A GlobalRelationshipDAO object
+    /** Gets a GlobalRelationshipService for this metadata database
+     * @return A GlobalRelationshipService object
      */
-    public GlobalRelationshipDAO getGlobalRelationshipDAO() {
-        return globalRelationshipDAO;
+    public GlobalRelationshipService getGlobalRelationshipService() {
+        return globalRelationshipService;
     }
 
-    /** Gets a MysqlTypesDAO for this metadata database
-     * @return A MysqlTypesDAO object
+    /** Gets a MysqlTypesService for this metadata database
+     * @return A MysqlTypesService object
      */
-    public MysqlTypesDAO getMysqlTypesDAO() {
-        return mysqlTypesDAO;
+    public MysqlTypesService getMysqlTypesService() {
+        return mysqlTypesService;
     }
 
-    /** Gets a PostgresTypesDAO for this metadata database
-     * @return A PostgresTypesDAO object
+    /** Gets a PostgresTypesService for this metadata database
+     * @return A PostgresTypesService object
      */
-    public PostgresTypesDAO getPostgresTypesDAO() {
-        return postgresTypesDAO;
+    public PostgresTypesService getPostgresTypesService() {
+        return postgresTypesService;
     }
 
-    /** Gets a PostgresMysqlTypeCompatibilityDAO for this metadata database
-     * @return A PostgresMysqlTypeCompatibilityDAO object
+    /** Gets a PostgresMysqlTypeCompatibilityService for this metadata database
+     * @return A PostgresMysqlTypeCompatibilityService object
      */
-    public PostgresMysqlTypeCompatibilityDAO getPostgresMysqlTypeCompatibilityDAO() {
-        return postgresMysqlTypeCompatibilityDAO;
+    public PostgresMysqlTypeCompatibilityService getPostgresMysqlTypeCompatibilityService() {
+        return postgresMysqlTypeCompatibilityService;
     }
 
-    /** Gets a MysqlReverseTypeCompatibilityDAO for this metadata database
-     * @return A MysqlReverseTypeCompatibilityDAO object
+    /** Gets a MysqlReverseTypeCompatibilityService for this metadata database
+     * @return A MysqlReverseTypeCompatibilityService object
      */
-    public MysqlReverseTypeCompatibilityDAO getMysqlReverseTypeCompatibilityDAO() {
-        return mysqlReverseTypeCompatibilityDAO;
+    public MysqlReverseTypeCompatibilityService getMysqlReverseTypeCompatibilityService() {
+        return mysqlReverseTypeCompatibilityService;
     }
 
-    /** Gets a PostgresReverseTypeCompatibilityDAO for this metadata database
-     * @return A PostgresReverseTypeCompatibilityDAO object
+    /** Gets a PostgresReverseTypeCompatibilityServie for this metadata database
+     * @return A PostgresReverseTypeCompatibilityServie object
      */
-    public PostgresReverseTypeCompatibilityDAO getPostgresReverseTypeCompatibilityDAO() {
-        return postgresReverseTypeCompatibilityDAO;
+    public PostgresReverseTypeCompatibilityServie getPostgresReverseTypeCompatibilityServie() {
+        return postgresReverseTypeCompatibilityServie;
+    }
+
+    public ConnectionService getConnectionService() {
+        return connectionService;
     }
 }
