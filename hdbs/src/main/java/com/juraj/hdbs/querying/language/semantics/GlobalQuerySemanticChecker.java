@@ -90,8 +90,8 @@ public class GlobalQuerySemanticChecker {
 
         aggregateColumnDataType = globalSchema.getColumnById(aggregateColumnId).getDataType();
 
-        List<String> allowed_types = metadataDb.getMysqlTypesService().getAggregationAllowedTypes();
-        allowed_types.addAll(metadataDb.getPostgresTypesService().getAggregationAllowedTypes());
+        List<String> allowed_types = metadataDb.getTypeService().getAggregationAllowedTypes();
+
 
         if (!allowed_types.contains(aggregateColumnDataType)){
             throw new SemanticAnalysisException(String.format("Column %s is of type %s and it cannot be used in a aggregate function.", aggregateColumnId, aggregateColumnDataType));

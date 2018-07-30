@@ -142,25 +142,9 @@ public class HeterogeneousDatabaseSystem {
 
 
 
-            if(pkDbVendor == fkDbVendor){
-                if(pkDbVendor == DBVendor.MYSQL){
-                    if(metadataDb.getMysqlReverseTypeCompatibilityService().getCompatibleTypesForType(typeName1).contains(typeName2)){
-                        operationSuccess = metadataDb.getGlobalRelationshipService().insert(globalRelationship);
-                        //currentGlobalSchema.getGlobalRelationships().add(globalRelationship);
-
-                    }
-                }
-                if(pkDbVendor == DBVendor.POSTGRESQL){
-                    if(metadataDb.getPostgresReverseTypeCompatibilityServie().getCompatibleTypesForType(typeName1).contains(typeName2)){
-                        operationSuccess = metadataDb.getGlobalRelationshipService().insert(globalRelationship);
-
-                    }
-                }
-            }else {
-                if(metadataDb.getPostgresMysqlTypeCompatibilityService().getAllTypesCompatibleWithType(typeName1).contains(typeName2)){
-                    operationSuccess = metadataDb.getGlobalRelationshipService().insert(globalRelationship);
-
-                }
+            if(metadataDb.getTypeCompatibilityService().getAllTypesCompatibleWithType(typeName1).contains(typeName2)){
+                operationSuccess = metadataDb.getGlobalRelationshipService().insert(globalRelationship);
+                //currentGlobalSchema.getGlobalRelationships().add(globalRelationship);
             }
 
             currentGlobalSchema = SchemaLoader.loadGlobalSchemaOnConnectionPool(connectionPool, metadataDb);

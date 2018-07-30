@@ -24,7 +24,7 @@ public class Main {
             hdbs.getConnectedDbNames().forEach(System.out::println);
 
             String queryText;
-            queryText = Resources.toString(Resources.getResource("query12.sql"), Charset.defaultCharset());
+            queryText = Resources.toString(Resources.getResource("query5.sql"), Charset.defaultCharset());
             time = System.nanoTime();
             ActionResult actionResult = hdbs.executeGlobalQuery(queryText);
             time = System.nanoTime() - time;

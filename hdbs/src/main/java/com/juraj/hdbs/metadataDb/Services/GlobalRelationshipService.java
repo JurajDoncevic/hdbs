@@ -31,7 +31,7 @@ public class GlobalRelationshipService {
             connection = DriverManager.getConnection(connectionUrl);
 
         Statement statement = connection.createStatement();
-        statement.execute("SELECT primaryKeyId, foreignKeyId FROM global_relationships;");
+        statement.execute("SELECT primary_key_id, foreign_key_id FROM global_relationships;");
 
         ResultSet resultSet = statement.getResultSet();
 
@@ -63,7 +63,7 @@ public class GlobalRelationshipService {
             connection = DriverManager.getConnection(connectionUrl);
 
             Statement statement = connection.createStatement();
-            statement.execute(String.format("SELECT primaryKeyId, foreignKeyId FROM global_relationships WHERE primaryKedId = '%s';", primaryKeyId));
+            statement.execute(String.format("SELECT primary_key_id, foreign_key_id FROM global_relationships WHERE primary_key_id = '%s';", primaryKeyId));
 
             ResultSet resultSet = statement.getResultSet();
 
@@ -95,7 +95,7 @@ public class GlobalRelationshipService {
             connection = DriverManager.getConnection(connectionUrl);
 
             Statement statement = connection.createStatement();
-            statement.execute(String.format("SELECT primaryKeyId, foreignKeyId FROM global_relationships WHERE primaryKedId = '%s';", foreignKeyId));
+            statement.execute(String.format("SELECT primary_key_id, foreign_key_id FROM global_relationships WHERE foreign_key_id = '%s';", foreignKeyId));
 
             ResultSet resultSet = statement.getResultSet();
 
@@ -129,7 +129,7 @@ public class GlobalRelationshipService {
             connection = DriverManager.getConnection(connectionUrl);
 
             Statement statement = connection.createStatement();
-            statement.execute(String.format("SELECT primaryKeyId, foreignKeyId FROM global_relationships WHERE primaryKedId = '%s' AND foreignKeyId = '%s';", primaryKeyId, foreignKeyId));
+            statement.execute(String.format("SELECT primary_key_id, foreign_key_id FROM global_relationships WHERE primary_key_id = '%s' AND foreign_key_id = '%s';", primaryKeyId, foreignKeyId));
 
             ResultSet resultSet = statement.getResultSet();
 
@@ -158,7 +158,7 @@ public class GlobalRelationshipService {
 
             Statement statement = connection.createStatement();
 
-            statement.execute(String.format("INSERT INTO global_relationships(primaryKeyId, foreignKeyId) VALUES('%s','%s');", globalRelationship.getPrimaryKeyId(), globalRelationship.getForeignKeyId()));
+            statement.execute(String.format("INSERT INTO global_relationships(primary_key_id, foreign_key_id) VALUES('%s','%s');", globalRelationship.getPrimaryKeyId(), globalRelationship.getForeignKeyId()));
 
 
             connection.close();
@@ -181,7 +181,7 @@ public class GlobalRelationshipService {
 
             Statement statement = connection.createStatement();
 
-            statement.execute(String.format("DELETE FROM global_relationships WHERE primaryKeyId = '%s' AND foreignKeyId = '%s';)", globalRelationship.getPrimaryKeyId(), globalRelationship.getForeignKeyId()));
+            statement.execute(String.format("DELETE FROM global_relationships WHERE primary_key_id = '%s' AND foreign_key_id = '%s';)", globalRelationship.getPrimaryKeyId(), globalRelationship.getForeignKeyId()));
 
 
             connection.close();
@@ -204,7 +204,7 @@ public class GlobalRelationshipService {
 
             Statement statement = connection.createStatement();
 
-            statement.execute(String.format("DELETE FROM global_relationships WHERE primaryKeyId = '%%.%s.%%' OR foreignKeyId = '%%.%s.%%';)", dbName, dbName));
+            statement.execute(String.format("DELETE FROM global_relationships WHERE primary_key_id = '%%.%s.%%' OR foreign_key_id = '%%.%s.%%';)", dbName, dbName));
 
 
             connection.close();

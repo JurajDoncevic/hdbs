@@ -12,12 +12,9 @@ public class MetadataDb {
 
     private String connectionUrl;
     private GlobalRelationshipService globalRelationshipService;
-    private MysqlTypesService mysqlTypesService;
-    private PostgresTypesService postgresTypesService;
-    private PostgresMysqlTypeCompatibilityService postgresMysqlTypeCompatibilityService;
-    private MysqlReverseTypeCompatibilityService mysqlReverseTypeCompatibilityService;
-    private PostgresReverseTypeCompatibilityServie postgresReverseTypeCompatibilityServie;
     private ConnectionService connectionService;
+    private TypeService typeService;
+    private TypeCompatibilityService typeCompatibilityService;
 
 
     /** Constructor
@@ -31,12 +28,9 @@ public class MetadataDb {
             throw new Exception("Connection with metadata DB could not be established!");
 
         globalRelationshipService = new GlobalRelationshipService(connectionUrl);
-        mysqlTypesService = new MysqlTypesService(connectionUrl);
-        postgresTypesService = new PostgresTypesService(connectionUrl);
-        postgresMysqlTypeCompatibilityService = new PostgresMysqlTypeCompatibilityService(connectionUrl);
-        mysqlReverseTypeCompatibilityService = new MysqlReverseTypeCompatibilityService(connectionUrl);
-        postgresReverseTypeCompatibilityServie = new PostgresReverseTypeCompatibilityServie(connectionUrl);
         connectionService = new ConnectionService(connectionUrl);
+        typeService = new TypeService(connectionUrl);
+        typeCompatibilityService = new TypeCompatibilityService(connectionUrl);
 
     }
 
@@ -69,42 +63,24 @@ public class MetadataDb {
         return globalRelationshipService;
     }
 
-    /** Gets a MysqlTypesService for this metadata database
-     * @return A MysqlTypesService object
+    /** Gets a ConnectionService for this metadata database
+     * @return A ConnectionService object
      */
-    public MysqlTypesService getMysqlTypesService() {
-        return mysqlTypesService;
-    }
-
-    /** Gets a PostgresTypesService for this metadata database
-     * @return A PostgresTypesService object
-     */
-    public PostgresTypesService getPostgresTypesService() {
-        return postgresTypesService;
-    }
-
-    /** Gets a PostgresMysqlTypeCompatibilityService for this metadata database
-     * @return A PostgresMysqlTypeCompatibilityService object
-     */
-    public PostgresMysqlTypeCompatibilityService getPostgresMysqlTypeCompatibilityService() {
-        return postgresMysqlTypeCompatibilityService;
-    }
-
-    /** Gets a MysqlReverseTypeCompatibilityService for this metadata database
-     * @return A MysqlReverseTypeCompatibilityService object
-     */
-    public MysqlReverseTypeCompatibilityService getMysqlReverseTypeCompatibilityService() {
-        return mysqlReverseTypeCompatibilityService;
-    }
-
-    /** Gets a PostgresReverseTypeCompatibilityServie for this metadata database
-     * @return A PostgresReverseTypeCompatibilityServie object
-     */
-    public PostgresReverseTypeCompatibilityServie getPostgresReverseTypeCompatibilityServie() {
-        return postgresReverseTypeCompatibilityServie;
-    }
-
     public ConnectionService getConnectionService() {
         return connectionService;
+    }
+
+    /** Gets a TypeService for this metadata database
+     * @return A TypeService object
+     */
+    public TypeService getTypeService() {
+        return typeService;
+    }
+
+    /** Gets a TypeCompatibilityService for this metadata database
+     * @return A TypeCompatibilityService object
+     */
+    public TypeCompatibilityService getTypeCompatibilityService() {
+        return typeCompatibilityService;
     }
 }

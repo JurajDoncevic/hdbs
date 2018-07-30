@@ -32,7 +32,8 @@ public class GlobalMaxAggregateQuery extends GlobalAggregateQuery {
     }
 
 
-    private final Function<List<Object>, Object> aggregationFunction = new Function<List<Object>, Object>() {
+    private final Function<List<Object>, Object> aggregationFunction =
+            new Function<List<Object>, Object>() {
         @Override
         public Object apply(List<Object> input){
 
@@ -41,7 +42,9 @@ public class GlobalMaxAggregateQuery extends GlobalAggregateQuery {
                     Float.parseFloat(String.valueOf(input.get(0)));
 
                     return input.stream()
-                            .map(x -> Float.parseFloat(String.valueOf(x)))
+                            .map(x ->
+                                Float.parseFloat(String.valueOf(x))
+                            )
                             .max(Float::compareTo)
                             .get();
                 }catch (Exception e){
@@ -52,7 +55,9 @@ public class GlobalMaxAggregateQuery extends GlobalAggregateQuery {
                     Integer.parseInt(String.valueOf(input.get(0)));
 
                     return input.stream()
-                            .map(x -> Integer.parseInt(String.valueOf(x)))
+                            .map(x ->
+                                Integer.parseInt(String.valueOf(x))
+                            )
                             .max(Integer::compareTo)
                             .get();
                 }catch (Exception e){
